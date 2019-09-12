@@ -1,0 +1,40 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 52%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.3rem;
+    position: absolute;
+    transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+    filter: blur(1px);
+
+    &-p1 {
+      left: 6rem;
+      top: -3rem;
+
+    }
+
+    &-p2 {
+      left: 21rem;
+      top: 4rem;
+    }
+
+    &-p3 {
+      top: 10rem;
+      left: -3rem;
+    }
+
+    &:hover {
+      z-index: 2;
+      transform: scale(1.05);
+      outline: 0.3rem solid $dark-green;
+      outline-offset: 0.4rem;
+      filter: blur(0px)
+    }
+  }
+
+  &__photo:not(:hover) {
+    z-index: 1;
+  }
+}

@@ -1,100 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SCSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SCSS</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="app.css">
-</head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        name="navigation"
+        id="navigation"
+        class="navigation__checkbox"
+      />
+      <label for="navigation" class="navigation__btn"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Nautors</a
+            >
+          </li>
 
-<body>
-  <!-- <header class="header">
-    <div class="logo-box">
-      <img src="./img/logo-white.png" alt="LOGO" class="logo">
-    </div>
-    <div class="text-box">
-      <h1 class="heading-primary">
-        <span class="heading-primary-main">Heading</span>
-        <span class="heading-primary-sub">This is test heading</span>
-      </h1>
-      <div class="text-center">
-        <a href="#" class="btn btn-white">This is test</a>
-      </div>
-    </div>
-  </header>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Your Benfits</a>
+          </li>
 
-  <section class="about-section">
-    <div class="text-center mb-8">
-      <h2 class="heading-secondary">
-        This is test heading in the section
-      </h2>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Popular</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Book Now</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Stories</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="mt-5">
-          <h3 class="heading-tertiary">this is test message for the heading</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio repellendus
-            totam
-            corporis autem incidunt placeat corrupti voluptas reiciendis facere.</p>
-          <h3 class="heading-tertiary">this is test message for the heading</h3>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio repellendus
-            totam
-            corporis autem incidunt placeat corrupti voluptas reiciendis facere.</p>
-          <a href="#" class=" btn-text">view more &nbsp;&rarr;</a>
+    <header class="header">
+      <div class="logo-box">
+        <img src="./img/logo-white.png" alt="LOGO" class="logo" />
+      </div>
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Heading</span>
+          <span class="heading-primary-sub">This is test heading</span>
+        </h1>
+        <div class="text-center">
+          <a href="#" class="btn btn-white">This is test</a>
         </div>
       </div>
-      <div class="col-1-of-2">
-        <div class="composition">
-          <img src="img/1.jpg" alt="1" class="composition__photo composition__photo-p1">
-          <img src="img/2.jpg" alt="2" class="composition__photo composition__photo-p2">
-          <img src="img/3.jpg" alt="3" class="composition__photo composition__photo-p3">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="features-section">
-    <div class="row">
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <i class="icon icon-basic-world"></i>
-          <h3 class="heading-tertiary  mb-2">Explore the world</h3>
-          <p class="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis totam ipsam vero est. Dicta.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <i class="icon icon-basic-compass"></i>
-          <h3 class="heading-tertiary  mb-2">Explore the world</h3>
-          <p class="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis totam ipsam vero est. Dicta.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <i class="icon icon-basic-map"></i>
-          <h3 class="heading-tertiary  mb-2">Explore the world</h3>
-          <p class="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis totam ipsam vero est. Dicta.
-          </p>
-        </div>
-      </div>
-      <div class="col-1-of-4">
-        <div class="feature-box">
-          <i class="icon icon-basic-heart"></i>
-          <h3 class="heading-tertiary mb-2">Explore the world</h3>
-          <p class="feature-box__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis totam ipsam vero est. Dicta.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-</body>
+    </header>
 
+    <section class="about-section">
+      <div class="text-center mb-8">
+        <h2 class="heading-secondary">
+          This is test heading in the section
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="mt-5">
+            <h3 class="heading-tertiary">
+              this is test message for the heading
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              distinctio repellendus totam corporis autem incidunt placeat
+              corrupti voluptas reiciendis facere.
+            </p>
+            <h3 class="heading-tertiary">
+              this is test message for the heading
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              distinctio repellendus totam corporis autem incidunt placeat
+              corrupti voluptas reiciendis facere.
+            </p>
+            <a href="#" class=" btn-text">view more &nbsp;&rarr;</a>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img
+              src="img/1.jpg"
+              alt="1"
+              class="composition__photo composition__photo-p1"
+            />
+            <img
+              src="img/2.jpg"
+              alt="2"
+              class="composition__photo composition__photo-p2"
+            />
+            <img
+              src="img/3.jpg"
+              alt="3"
+              class="composition__photo composition__photo-p3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="icon icon-basic-world"></i>
+            <h3 class="heading-tertiary  mb-2">Explore the world</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque corporis totam ipsam vero est. Dicta.
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="icon icon-basic-compass"></i>
+            <h3 class="heading-tertiary  mb-2">Explore the world</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque corporis totam ipsam vero est. Dicta.
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="icon icon-basic-map"></i>
+            <h3 class="heading-tertiary  mb-2">Explore the world</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque corporis totam ipsam vero est. Dicta.
+            </p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary mb-2">Explore the world</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque corporis totam ipsam vero est. Dicta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tours-section">
+      <div class="text-center mb-8">
+        <h2 class="heading-secondary">
+          This is another heading
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-p1">
+                &nbsp;
+              </div>
+              <div class="card__heading">
+                <div class="card__heading-span card__heading-span--p1">
+                  The SEA EXPLRER
+                </div>
+              </div>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">$297</p>
+                </div>
+                <a href="#" class="btn btn-white">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-p2">
+                &nbsp;
+              </div>
+              <div class="card__heading">
+                <div class="card__heading-span card__heading-span--p2">
+                  The SEA EXPLRER
+                </div>
+              </div>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">$297</p>
+                </div>
+                <a href="#" class="btn btn-white">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture-p3">
+                &nbsp;
+              </div>
+              <div class="card__heading">
+                <div class="card__heading-span card__heading-span--p3">
+                  The SEA EXPLRER
+                </div>
+              </div>
+              <div class="card__details">
+                <ul>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                  <li>3 day tours</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">
+                    Only
+                  </p>
+                  <p class="card__price-value">$297</p>
+                </div>
+                <a href="#" class="btn btn-white">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2 mb-6">
+        <a href="" class="btn btn--green">Discover all tours</a>
+      </div>
+    </section>
+    <section class="stories-section">
+      <div class="text-center mb-8">
+        <h2 class="heading-secondary">
+          This is another heading
+        </h2>
+      </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img src="./img/nat-8.jpg" alt="" class="" />
+            <figcaption class="story__caption">
+              Mary Smith
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary mb-2">This is a sample heading</h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illo
+              magni, totam qui, nisi cumque at soluta quidem itaque ea
+              praesentium quasi porro rem. Error quos fugiat commodi autem et.
+            </p>
+          </div>
+        </div>
+        <div class="story">
+          <figure class="story__shape">
+            <img src="./img/nat-9.jpg" alt="" class="" />
+            <figcaption class="story__caption">
+              Mohamed Hussein
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary mb-2">This is a sample heading</h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illo
+              magni, totam qui, nisi cumque at soluta quidem itaque ea
+              praesentium quasi porro rem. Error quos fugiat commodi autem et.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-2">
+        <a href="#" class=" btn-text">read all stories &nbsp;&rarr;</a>
+      </div>
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay loop muted>
+          <source src="./img/video.webm" type="video/webm" />
+          <source src="./img/video.mp4" type="video/mp4" />
+          Browser is not supported
+        </video>
+      </div>
+    </section>
+    <section class="book-section">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form class="form">
+              <div class="mb-4">
+                <h2 class="heading-secondary">
+                  This is another heading
+                </h2>
+              </div>
+              <div class="form__group">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  id="fullname"
+                  class="form__control"
+                  placeholder="Full Name"
+                  required
+                />
+                <label for="fullname" class="form__label">Full Name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  autocomplete="off"
+                  type="email"
+                  id="email"
+                  class="form__control"
+                  placeholder="Email Address"
+                  required
+                />
+                <label for="email" class="form__label">Email Address</label>
+              </div>
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    id="small"
+                    name="tour"
+                    class="form__radio-input"
+                  />
+                  <label for="small" class="form__radio-label"
+                    ><span class="form__radio-btn"></span> Small Tour
+                    Group</label
+                  >
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    id="large"
+                    name="tour"
+                    class="form__radio-input"
+                  />
+                  <label for="large" class="form__radio-label"
+                    ><span class="form__radio-btn"></span> Large Tour
+                    Group</label
+                  >
+                </div>
+              </div>
+              <div class="form__group mt-4">
+                <button type="submit" value="Submit" class="btn btn--green">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./img/nat-8.jpg" alt="PHOTO" />
+          <img src="./img/nat-9.jpg" alt="PHOTO" />
+        </div>
+        <div class="popup__right">
+          <h2 class="heading-secondary mb-2 mt-4">This is test heading</h2>
+          <h3 class="heading-tertiary mb-3">
+            Important &mdash; But this is test heading
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime qui
+            doloremque nesciunt sapiente autem explicabo tenetur aspernatur non
+            dolorum repellat laborum, nam voluptatibus totam fugit incidunt
+            molestiae error quasi excepturi.
+          </p>
+          <div class="text-center mt-2 mb-6">
+            <a href="" class="btn btn--green">Discover all tours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

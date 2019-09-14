@@ -5,8 +5,13 @@
 @import "./base/utilities";
 @import "./base/animations";
 @import "./components/btn";
+@import "./components/stories";
+@import "./components/popup";
+@import "./components/navigation";
+@import "./components/forms";
 @import "./layouts/header";
 @import "./layouts/grid";
 @import "./pages/home";
 @import "./components/composition";
-@import "./components/features-box.scss";
+@import "./components/features-box";
+@import "./components/card";
